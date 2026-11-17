@@ -68,55 +68,55 @@ Market concentration is **moderately concentrated with strong ongoing consolidat
 
 ## 💻 Open-Source GitHub Projects
 
-*Sorted by GitHub Star count in descending order. Star badges link directly to each project's stargazers community:*
+*Sorted by GitHub Stars_Count in descending order. Stars_Badges link directly to each project's stargazers community:*
 
-- **[Rclone](https://github.com/rclone/rclone)** [![GitHub stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers)  
+- **[Rclone](https://github.com/rclone/rclone)** [![GitHub_Stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers)  
   🚀 The "Swiss army knife" for cloud storage. Syncs directories and files across 70+ cloud storage backends (S3, B2, Azure, Google Drive, SFTP, WebDAV); frequently acts as the lightweight data mover layer in custom hybrid pipelines.
 
-- **[Restic](https://github.com/restic/restic)** [![GitHub stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers)  
+- **[Restic](https://github.com/restic/restic)** [![GitHub_Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers)  
   ⚡ Fast, secure, and authenticated backup program written in Go. Employs state-of-the-art cryptography and content-defined chunking (CDC) deduplication, targeting S3, SFTP, and REST backends.
 
-- **[Duplicati](https://github.com/duplicati/duplicati)** [![GitHub stars](https://img.shields.io/github/stars/duplicati/duplicati?style=social&color=white)](https://github.com/duplicati/duplicati/stargazers)  
+- **[Duplicati](https://github.com/duplicati/duplicati)** [![GitHub_Stars](https://img.shields.io/github/stars/duplicati/duplicati?style=social&color=white)](https://github.com/duplicati/duplicati/stargazers)  
   🌐 Free backup client featuring a clean web UI. Handles incremental block-level deduplication, AES-256 encryption, and hybrid uploads across standard cloud storage targets.
 
-- **[Kopia](https://github.com/kopia/kopia)** [![GitHub stars](https://img.shields.io/github/stars/kopia/kopia?style=social&color=white)](https://github.com/kopia/kopia/stargazers)  
+- **[Kopia](https://github.com/kopia/kopia)** [![GitHub_Stars](https://img.shields.io/github/stars/kopia/kopia?style=social&color=white)](https://github.com/kopia/kopia/stargazers)  
   🔒 Fast and secure open-source backup tool featuring both CLI and GUI interfaces. Supports zero-knowledge client-side encryption, deduplication, content caching, and native cloud repository providers.
 
-- **[BorgBackup](https://github.com/borgbackup/borg)** [![GitHub stars](https://img.shields.io/github/stars/borgbackup/borg?style=social&color=white)](https://github.com/borgbackup/borg/stargazers)  
+- **[BorgBackup](https://github.com/borgbackup/borg)** [![GitHub_Stars](https://img.shields.io/github/stars/borgbackup/borg?style=social&color=white)](https://github.com/borgbackup/borg/stargazers)  
   📦 Deduplicating archiver with authenticated encryption and compression. Ideal for automated, high-efficiency server-to-server and server-to-cloud backup pipelines over SSH.
 
-- **[Velero](https://github.com/velero-io/velero)** [![GitHub stars](https://img.shields.io/github/stars/velero-io/velero?style=social&color=white)](https://github.com/velero-io/velero/stargazers)  
+- **[Velero](https://github.com/velero-io/velero)** [![GitHub_Stars](https://img.shields.io/github/stars/velero-io/velero?style=social&color=white)](https://github.com/velero-io/velero/stargazers)  
   ☸️ Industry-standard cloud-native data protection platform for Kubernetes. Backs up and restores cluster resources and persistent volumes across hybrid cloud and multicloud environments.
 
-- **[Bup](https://github.com/bup/bup)** [![GitHub stars](https://img.shields.io/github/stars/bup/bup?style=social&color=white)](https://github.com/bup/bup/stargazers)  
+- **[Bup](https://github.com/bup/bup)** [![GitHub_Stars](https://img.shields.io/github/stars/bup/bup?style=social&color=white)](https://github.com/bup/bup/stargazers)  
   🗄️ Highly efficient backup system based on the Git packfile format. Handles massive virtual machine disk images and multi-terabyte datasets through rolling-checksum global deduplication.
 
-- **[Duplicacy](https://github.com/gilbertchen/duplicacy)** [![GitHub stars](https://img.shields.io/github/stars/gilbertchen/duplicacy?style=social&color=white)](https://github.com/gilbertchen/duplicacy/stargazers)  
+- **[Duplicacy](https://github.com/gilbertchen/duplicacy)** [![GitHub_Stars](https://img.shields.io/github/stars/gilbertchen/duplicacy?style=social&color=white)](https://github.com/gilbertchen/duplicacy/stargazers)  
   🔄 Lock-free deduplicating cloud backup tool. Enables multiple clients and agents to back up concurrently to the same active cloud storage destination without requiring an active coordinator daemon.
 
-- **[WAL-G](https://github.com/wal-g/wal-g)** [![GitHub stars](https://img.shields.io/github/stars/wal-g/wal-g?style=social&color=white)](https://github.com/wal-g/wal-g/stargazers)  
+- **[WAL-G](https://github.com/wal-g/wal-g)** [![GitHub_Stars](https://img.shields.io/github/stars/wal-g/wal-g?style=social&color=white)](https://github.com/wal-g/wal-g/stargazers)  
   🐘 Advanced archival, continuous WAL streamer, and point-in-time recovery data mover for PostgreSQL, MySQL, and SQL Server pushing straight to cloud object storage.
 
-- **[Rustic](https://github.com/rustic-rs/rustic)** [![GitHub stars](https://img.shields.io/github/stars/rustic-rs/rustic?style=social&color=white)](https://github.com/rustic-rs/rustic/stargazers)  
+- **[Rustic](https://github.com/rustic-rs/rustic)** [![GitHub_Stars](https://img.shields.io/github/stars/rustic-rs/rustic?style=social&color=white)](https://github.com/rustic-rs/rustic/stargazers)  
   🦀 High-performance, memory-safe backup client powered by Rust. Restic-compatible repository format with advanced pruning, synthetic full backups, and extensible backend drivers.
 
-- **[Barman](https://github.com/EnterpriseDB/barman)** [![GitHub stars](https://img.shields.io/github/stars/EnterpriseDB/barman?style=social&color=white)](https://github.com/EnterpriseDB/barman/stargazers)  
+- **[Barman](https://github.com/EnterpriseDB/barman)** [![GitHub_Stars](https://img.shields.io/github/stars/EnterpriseDB/barman?style=social&color=white)](https://github.com/EnterpriseDB/barman/stargazers)  
   🏛️ Enterprise-grade Backup and Recovery Manager for PostgreSQL. Coordinates remote agents, streaming replication, WAL archiving, and cloud retention policies.
 
-- **[Bareos](https://github.com/bareos/bareos)** [![GitHub stars](https://img.shields.io/github/stars/bareos/bareos?style=social&color=white)](https://github.com/bareos/bareos/stargazers)  
+- **[Bareos](https://github.com/bareos/bareos)** [![GitHub_Stars](https://img.shields.io/github/stars/bareos/bareos?style=social&color=white)](https://github.com/bareos/bareos/stargazers)  
   🏢 Enterprise-grade open-source network backup engine (Director, Storage Daemon, File Daemon). The premier self-hosted equivalent to commercial media agent / proxy topologies; supports tape, disk, and S3-compatible cloud storage.
 
-- **[UrBackup](https://github.com/uroni/urbackup_backend)** [![GitHub stars](https://img.shields.io/github/stars/uroni/urbackup_backend)](https://github.com/uroni/urbackup_backend/stargazers)  
+- **[UrBackup](https://github.com/uroni/urbackup_backend)** [![GitHub_Stars](https://img.shields.io/github/stars/uroni/urbackup_backend)](https://github.com/uroni/urbackup_backend/stargazers)  
   🖥️ Open-source client/server backup system for Windows and Linux. Offers fast image and file backups with web administration, client agent autodiscovery, and offsite storage replication.
 
-- **[Amanda](https://github.com/zmanda/amanda)** [![GitHub stars](https://img.shields.io/github/stars/zmanda/amanda?style=social&color=white)](https://github.com/zmanda/amanda/stargazers)  
+- **[Amanda](https://github.com/zmanda/amanda)** [![GitHub_Stars](https://img.shields.io/github/stars/zmanda/amanda?style=social&color=white)](https://github.com/zmanda/amanda/stargazers)  
   🕰️ Advanced Maryland Automatic Network Disk Archiver. Battle-tested client-server backup framework capable of coordinating hundreds of endpoint agents to centralized storage pools and cloud tiers.
 
-- **[Proxmox Backup Server](https://github.com/proxmox/proxmox-backup)** [![GitHub stars](https://img.shields.io/github/stars/proxmox/proxmox-backup?style=social&color=white)](https://github.com/proxmox/proxmox-backup/stargazers)  
+- **[Proxmox Backup Server](https://github.com/proxmox/proxmox-backup)** [![GitHub_Stars](https://img.shields.io/github/stars/proxmox/proxmox-backup?style=social&color=white)](https://github.com/proxmox/proxmox-backup/stargazers)  
   🛡️ Enterprise backup solution architected in Rust, tailored for Proxmox VE VMs, containers, and physical hosts. Features deduplication, authenticated zstd compression, client encryption, and remote synchronization.
 
-- **[Bacula Community](https://github.com/bacula-web/bacula-web)** [![GitHub stars](https://img.shields.io/github/stars/bacula-web/bacula-web?style=social&color=white)](https://github.com/bacula-web/bacula-web/stargazers)  
-  🌐 Classic distributed enterprise backup suite (Director, Storage Daemon, File Daemon). Provides industrial scheduling, granular catalogs, and multi-node protection for hybrid infrastructure *(GitHub star badge tracks the Bacula-Web management portal; core engine source hosted at [Bacula Community GitLab](https://gitlab.bacula.org/))*.
+- **[Bacula Community](https://github.com/bacula-web/bacula-web)** [![GitHub_Stars](https://img.shields.io/github/stars/bacula-web/bacula-web?style=social&color=white)](https://github.com/bacula-web/bacula-web/stargazers)  
+  🌐 Classic distributed enterprise backup suite (Director, Storage Daemon, File Daemon). Provides industrial scheduling, granular catalogs, and multi-node protection for hybrid infrastructure *(GitHub Stars_Badge tracks the Bacula-Web management portal; core engine source hosted at [Bacula Community GitLab](https://gitlab.bacula.org/))*.
 
 ---
 
