@@ -1,93 +1,180 @@
-# Top Hybrid Cloud Backup Proxy & Agent
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Hybrid Cloud Backup Proxy & Agent Banner" width="100%" />
+</p>
 
-*Focused on Backup Proxies, Media Agents, Endpoint Agents, Hybrid Cloud Data Protection & Distributed Backup Architecture*
+# 🛡️ Top Hybrid Cloud Backup Proxy & Agent
+**A Curated Directory of Enterprise SaaS Platforms, Distributed Media Agents & High-Performance Open-Source Data Movers**
+
+<p align="left">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/badge/Category-Backup%20%26%20DR-blue?style=flat-square" alt="Category" />
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=flat-square" alt="Maintained" />
+  <img src="https://img.shields.io/badge/License-CC0--1.0-orange?style=flat-square" alt="License" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+*Focused on Hybrid Cloud Data Protection, Backup Proxies, Transport Nodes, Media Agents, Endpoint Movers, Distributed Architecture & Immutable Ransomware Recovery.*
 
 **Last updated: November 2026**
 
-This repository tracks notable **SaaS / commercial platforms** and **open-source projects** for **Hybrid Cloud Backup Proxies and Agents**. These components act as intermediaries or local agents that move, process, deduplicate, and transfer backup data between on-premises systems and cloud or secondary storage targets.
+---
 
-**Examples** include Druva Backup Proxy, Veeam Backup Proxy, Commvault MediaAgent, Cohesity Cloud Edition, Acronis Backup Agent, Rubrik Edge, Datto Endpoint Backup Agent, Quest Rapid Recovery Core, NAKIVO Transporter, and Arcserve UDP Agent (the category leaders).
+## 📌 Overview & Architecture
 
-**Open-source emphasis**: While commercial backup platforms dominate enterprise hybrid deployments with polished proxies and media agents, strong open-source alternatives exist. **Bareos**, **Bacula**, **UrBackup**, **Proxmox Backup Server**, **Restic**, **BorgBackup**, **Kopia**, and related projects provide client/server or agent-based architectures suitable for hybrid cloud backup workflows. This section is heavily expanded.
+Modern enterprise disaster recovery (DR) and hybrid cloud architectures demand decoupled data movers. **Backup Proxies**, **MediaAgents**, and **Endpoint Agents** serve as vital intermediary pipelines that process, deduplicate, compress, encrypt, and stream backup workloads between on-premises virtual/physical infrastructure and private or hyperscale cloud repositories (Amazon S3, Azure Blob, Google Cloud Storage, Cloudian, Wasabi).
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Starting Price | Free Tier / Trial Limits |
-| :--- | :--- | :--- | :--- |
-| **[Druva Backup Proxy](https://www.druva.com/)** | Cloud-native backup proxy component that enables efficient data movement from on-premises workloads into Druva’s SaaS data protection platform. | Starting at ~$8.00/user/month (or consumption-based per TB post-dedup) | 30-day free trial (no credit card required, full functionality across evaluation workloads) |
-| **[Veeam Backup Proxy](https://www.veeam.com/)** | Core transport component in Veeam Backup & Replication that handles data movement, compression, and deduplication between sources and backup repositories (including cloud targets). | Starting at ~$95/workload/year (Veeam Data Platform Essentials 5-pack bundle at ~$428/year) | Free forever Community Edition up to 10 workloads; 30-day full-featured enterprise trial |
-| **[Commvault MediaAgent](https://www.commvault.com/)** | MediaAgent serves as the data mover and storage handler in Commvault environments, managing backup traffic between clients, on-prem storage, and cloud repositories. | Starting at ~$1.70/user/month for SaaS apps; ~$58.50/TB/month for file/object workloads (~$98/VM/year) | 30-day free trial with full SaaS platform access (or 30,000 trial credits on hyperscaler marketplaces) |
-| **[Cohesity Cloud Edition / Agents](https://www.cohesity.com/)** | Hybrid components and agents that integrate on-premises data sources with Cohesity’s cloud and secondary storage platforms. | Starting at ~$29,100/year for baseline BaaS packages (~10 BETB entry commitment on AWS Marketplace) | 30-day free trial for Backup-as-a-Service (DataProtect) |
-| **[Acronis Backup Agent](https://www.acronis.com/)** | Endpoint and workload agents that protect physical, virtual, and cloud systems and move data into Acronis Cyber Protect storage targets. | Starting at ~$85/workstation/year and ~$595/server/year | 30-day full-featured free trial |
-| **[Rubrik Edge](https://www.rubrik.com/)** | Lightweight edge component that extends Rubrik’s data management platform to remote or edge locations for hybrid backup and recovery. | Starting at ~$3.80/user/month for cloud apps; enterprise platform contracts typically start around ~$50,000/year | 30-day free trial for specific SaaS modules (e.g., Salesforce); custom PoC/demo for core Edge platform |
-| **[Datto Endpoint Backup Agent](https://www.datto.com/)** | Agent used in Datto’s endpoint and hybrid backup solutions for continuous or scheduled protection of endpoints and servers. | Starting at ~$105/month for packaged DR configurations (or ~$2–$6/endpoint/month via MSP tiers) | Free partner NFR evaluation licenses (2 free NFR PC licenses for registered partners); guided trial spin/demo for prospects |
-| **[Quest Rapid Recovery Core](https://www.quest.com/)** | Core/engine component that manages replication, backup, and recovery operations across hybrid environments. | Starting at ~$1,819.99/license (includes 1 year of 24x7 support & maintenance) | 14-day free trial (extendable by administrators up to 28–30 days) |
-| **[NAKIVO Transporter](https://www.nakivo.com/)** | Data mover component in NAKIVO Backup & Replication responsible for transferring backup data between sources, proxies, and repositories. | Starting at ~$2.45/workload/month (or perpetual licenses from ~$229/socket) | Free forever Edition for up to 10 workloads + 5 M365 users; 15-day unconstrained full trial |
-| **[Arcserve UDP Agent / Proxy](https://www.arcserve.com/)** | Agents and proxy roles within Arcserve Unified Data Protection for hybrid backup, replication, and recovery workflows. | Starting at ~$19.99/front-end TB/month (or annual software subscriptions from ~$1,300/year) | Free forever Workstation Free Edition (after trial); 30-day full-featured free trial |
-
-## Open-Source GitHub Projects
-- **[Bareos](https://github.com/bareos/bareos)**  
-  Fully open-source (AGPLv3) cross-network backup solution with Director, Storage Daemon, and File Daemon architecture. Closest open equivalent to commercial proxy/media-agent designs; supports disk, tape, and S3-compatible storage.
-
-- **[Bacula Community](https://www.bacula.org/)**  
-  Classic open-source network backup system (Director + Storage Daemon + File Daemon). Provides enterprise-style catalog, scheduling, and multi-client protection suitable for hybrid environments.
-
-- **[UrBackup](https://github.com/uroni/urbackup_backend)**  
-  Open-source client/server backup system with web UI. Supports both file and image backups for Windows and Linux clients, making it practical for smaller hybrid deployments.
-
-- **[Proxmox Backup Server](https://github.com/proxmox/proxmox-backup)**  
-  Dedicated open-source backup server optimized for Proxmox VE and other workloads. Offers client-side encryption, deduplication, and efficient hybrid storage targets.
-
-- **[Restic](https://github.com/restic/restic)**  
-  Modern, fast, encrypted backup tool written in Go. Excellent for hybrid cloud use cases with native support for S3, SFTP, REST server, and many other backends via rclone.
-
-- **[BorgBackup](https://github.com/borgbackup/borg)**  
-  Deduplicating, compressing, and encrypting backup program. Widely used for efficient server-to-server or server-to-cloud hybrid backup pipelines over SSH.
-
-- **[Kopia](https://github.com/kopia/kopia)**  
-  Cross-platform open-source backup tool with CLI and GUI. Supports encryption, deduplication, and multiple cloud/object storage backends for hybrid scenarios.
-
-- **[Duplicati](https://github.com/duplicati/duplicati)**  
-  Free, open-source backup client with a web UI. Works well for endpoint and small-server hybrid backups to cloud storage providers.
-
-- **[Rclone](https://github.com/rclone/rclone)**  
-  Extremely versatile open-source command-line tool for syncing and transferring data to/from cloud storage. Frequently used as a transport or “proxy-like” layer in hybrid backup scripts.
-
-- **[Amanda](https://www.amanda.org/)**  
-  Long-standing open-source network backup system that can coordinate backups across multiple clients to centralized storage, including cloud targets.
-
-### Additional Strong Open-Source Options
-- Enterprise-style client/server (proxy/agent model): **Bareos**, **Bacula Community**, **UrBackup**.
-- Modern encrypted file-level tools ideal for hybrid cloud: **Restic**, **BorgBackup**, **Kopia**.
-- Backup server focused: **Proxmox Backup Server**.
-- Transport / sync layer: **Rclone**.
-- Accepting that commercial solutions (Veeam Backup Proxy, Commvault MediaAgent, Druva, Rubrik Edge, NAKIVO Transporter, Acronis agents) still lead in enterprise features such as advanced application awareness, instant recovery, global deduplication scale, and vendor support.
-
-**Frameworks for building custom systems**:  
-Deploy **Bareos** or **Bacula** File Daemons as agents and Storage Daemons as proxies → use **Restic** or **BorgBackup** for efficient encrypted transfers to S3-compatible or object storage → orchestrate with scripts or **Rclone** for additional cloud mobility. Ideal for teams that want full control, data sovereignty, and no per-agent licensing costs in hybrid environments.
-
-## How to Contribute
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Backup and recovery systems are critical infrastructure. Always validate restore procedures, test recovery time/point objectives, and review encryption, retention, and compliance requirements. Open-source tools offer transparency and cost advantages but place more responsibility on the operator for configuration, monitoring, and support. This list is not professional backup, disaster recovery, or compliance advice.
+This curated repository tracks the leading **commercial SaaS / enterprise backup solutions** and top **open-source data movers and client-server backup engines**.
 
 ---
-**Made for backup administrators, infrastructure engineers, and open-source advocates.**
 
-Let's keep hybrid data protection powerful, transparent, and under your control.
+## 📊 Sector Overview & Market Dynamics
+
+The global cloud backup and hybrid cloud data protection market is valued at approximately **$5.3B–$8.6B** (scaling at a rapid CAGR of ~22%–25%), situated within an expansive overarching hybrid cloud infrastructure sector exceeding **$150B**. 
+
+Market concentration is **moderately concentrated with strong ongoing consolidation** at the enterprise resiliency layer: dominant players (such as Veeam, Cohesity combined with Veritas, Commvault, Rubrik, and Acronis) capture the lion's share of enterprise budgets alongside underlying public hyperscalers, while the mid-market and SMB space remains dynamic and fragmented across specialized point solutions and thousands of Managed Service Providers (MSPs).
+
+---
+
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Enterprise Commercial Platforms](#️-saas--enterprise-commercial-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Community](#-support--community)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer](#️-disclaimer)
+
+---
+
+## ☁️ SaaS & Enterprise Commercial Platforms
+
+*Sorted by company scale (Valuation / Revenue) in descending order:*
+
+| Product | Company Scale (Valuation / Revenue) | Description | Starting Price | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Veeam Backup Proxy](https://www.veeam.com/)** | **~$15B valuation** (~$1.7B–$2B ARR) | Core transport mover in Veeam Backup & Replication handling deduplication, compression, and transport to cloud/local repositories. | Starting at ~$95/workload/year (Veeam Data Platform Essentials 5-pack bundle at ~$428/year) | Free forever Community Edition up to 10 workloads; 30-day full-featured enterprise trial |
+| **[Cohesity Cloud Edition / Agents](https://www.cohesity.com/)** | **~$7B–$8B valuation** (~$1.3B–$1.7B pro forma rev) | Enterprise hybrid cloud components and agents orchestrating secondary storage, immutable snapshots, and cloud vaulting. | Starting at ~$29,100/year for baseline BaaS packages (~10 BETB entry commitment on AWS Marketplace) | 30-day free trial for Backup-as-a-Service (DataProtect) |
+| **[Rubrik Edge](https://www.rubrik.com/)** | **~$7B–$9B market cap** (~$1.09B ARR) | Lightweight software appliance extending zero-trust data security, immutable backups, and proxy transport to edge environments. | Starting at ~$3.80/user/month for cloud apps; enterprise platform contracts typically start around ~$50,000/year | 30-day free trial for specific SaaS modules (e.g., Salesforce); custom PoC/demo for core Edge platform |
+| **[Commvault MediaAgent](https://www.commvault.com/)** | **~$5B–$7B market cap** (~$1B+ annual rev) | High-performance data mover and index coordinator managing cross-environment data traffic between clients and targets. | Starting at ~$1.70/user/month for SaaS apps; ~$58.50/TB/month for file/object workloads (~$98/VM/year) | 30-day free trial with full SaaS platform access (or 30,000 trial credits on hyperscaler marketplaces) |
+| **[Datto Endpoint Backup Agent](https://www.datto.com/)** | **$6.2B acquisition** by Kaseya (~$619M rev) | Direct-to-cloud endpoint agent protecting mobile, remote, and server workloads with automated cloud verification. | Starting at ~$105/month for packaged DR configurations (or ~$2–$6/endpoint/month via MSP tiers) | Free partner NFR evaluation licenses (2 free NFR PC licenses for registered partners); guided trial spin/demo for prospects |
+| **[Quest Rapid Recovery Core](https://www.quest.com/)** | **$5.4B acquisition** (~$700M–$850M rev) | Core deduplication, snapshot, and hybrid replication engine connecting on-prem systems with cloud repositories. | Starting at ~$1,819.99/license (includes 1 year of 24x7 support & maintenance) | 14-day free trial (extendable by administrators up to 28–30 days) |
+| **[Acronis Backup Agent](https://www.acronis.com/)** | **~$3.5B valuation** (~$400M–$430M rev) | Cyber Protect universal workload agent delivering unified anti-ransomware, disk cloning, and hybrid cloud archiving. | Starting at ~$85/workstation/year and ~$595/server/year | 30-day full-featured free trial |
+| **[Druva Backup Proxy](https://www.druva.com/)** | **~$1B–$2B valuation** (~$200M–$300M ARR) | 100% SaaS cloud proxy appliance that streams deduplicated on-prem workload snapshots into Druva AWS Cloud. | Starting at ~$8.00/user/month (or consumption-based per TB post-dedup) | 30-day free trial (no credit card required, full functionality across evaluation workloads) |
+| **[Arcserve UDP Agent / Proxy](https://www.arcserve.com/)** | **~$100M–$150M est. rev** (PE-backed) | Unified Data Protection proxies delivering block-level I/O tracking, WAN optimization, and multi-tenant cloud storage. | Starting at ~$19.99/front-end TB/month (or annual software subscriptions from ~$1,300/year) | Free forever Workstation Free Edition (after trial); 30-day full-featured free trial |
+| **[NAKIVO Transporter](https://www.nakivo.com/)** | **~$20M–$30M est. rev** (Bootstrapped/Private) | Lightweight data mover service responsible for backup execution, network throttling, and repository writing. | Starting at ~$2.45/workload/month (or perpetual licenses from ~$229/socket) | Free forever Edition for up to 10 workloads + 5 M365 users; 15-day unconstrained full trial |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+*Sorted by GitHub Star count in descending order. Star badges link directly to each project's stargazers community:*
+
+- **[Rclone](https://github.com/rclone/rclone)** [![GitHub stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers)  
+  🚀 The "Swiss army knife" for cloud storage. Syncs directories and files across 70+ cloud storage backends (S3, B2, Azure, Google Drive, SFTP, WebDAV); frequently acts as the lightweight data mover layer in custom hybrid pipelines.
+
+- **[Restic](https://github.com/restic/restic)** [![GitHub stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers)  
+  ⚡ Fast, secure, and authenticated backup program written in Go. Employs state-of-the-art cryptography and content-defined chunking (CDC) deduplication, targeting S3, SFTP, and REST backends.
+
+- **[Duplicati](https://github.com/duplicati/duplicati)** [![GitHub stars](https://img.shields.io/github/stars/duplicati/duplicati?style=social&color=white)](https://github.com/duplicati/duplicati/stargazers)  
+  🌐 Free backup client featuring a clean web UI. Handles incremental block-level deduplication, AES-256 encryption, and hybrid uploads across standard cloud storage targets.
+
+- **[Kopia](https://github.com/kopia/kopia)** [![GitHub stars](https://img.shields.io/github/stars/kopia/kopia?style=social&color=white)](https://github.com/kopia/kopia/stargazers)  
+  🔒 Fast and secure open-source backup tool featuring both CLI and GUI interfaces. Supports zero-knowledge client-side encryption, deduplication, content caching, and native cloud repository providers.
+
+- **[BorgBackup](https://github.com/borgbackup/borg)** [![GitHub stars](https://img.shields.io/github/stars/borgbackup/borg?style=social&color=white)](https://github.com/borgbackup/borg/stargazers)  
+  📦 Deduplicating archiver with authenticated encryption and compression. Ideal for automated, high-efficiency server-to-server and server-to-cloud backup pipelines over SSH.
+
+- **[Velero](https://github.com/velero-io/velero)** [![GitHub stars](https://img.shields.io/github/stars/velero-io/velero?style=social&color=white)](https://github.com/velero-io/velero/stargazers)  
+  ☸️ Industry-standard cloud-native data protection platform for Kubernetes. Backs up and restores cluster resources and persistent volumes across hybrid cloud and multicloud environments.
+
+- **[Bup](https://github.com/bup/bup)** [![GitHub stars](https://img.shields.io/github/stars/bup/bup?style=social&color=white)](https://github.com/bup/bup/stargazers)  
+  🗄️ Highly efficient backup system based on the Git packfile format. Handles massive virtual machine disk images and multi-terabyte datasets through rolling-checksum global deduplication.
+
+- **[Duplicacy](https://github.com/gilbertchen/duplicacy)** [![GitHub stars](https://img.shields.io/github/stars/gilbertchen/duplicacy?style=social&color=white)](https://github.com/gilbertchen/duplicacy/stargazers)  
+  🔄 Lock-free deduplicating cloud backup tool. Enables multiple clients and agents to back up concurrently to the same active cloud storage destination without requiring an active coordinator daemon.
+
+- **[WAL-G](https://github.com/wal-g/wal-g)** [![GitHub stars](https://img.shields.io/github/stars/wal-g/wal-g?style=social&color=white)](https://github.com/wal-g/wal-g/stargazers)  
+  🐘 Advanced archival, continuous WAL streamer, and point-in-time recovery data mover for PostgreSQL, MySQL, and SQL Server pushing straight to cloud object storage.
+
+- **[Rustic](https://github.com/rustic-rs/rustic)** [![GitHub stars](https://img.shields.io/github/stars/rustic-rs/rustic?style=social&color=white)](https://github.com/rustic-rs/rustic/stargazers)  
+  🦀 High-performance, memory-safe backup client powered by Rust. Restic-compatible repository format with advanced pruning, synthetic full backups, and extensible backend drivers.
+
+- **[Barman](https://github.com/EnterpriseDB/barman)** [![GitHub stars](https://img.shields.io/github/stars/EnterpriseDB/barman?style=social&color=white)](https://github.com/EnterpriseDB/barman/stargazers)  
+  🏛️ Enterprise-grade Backup and Recovery Manager for PostgreSQL. Coordinates remote agents, streaming replication, WAL archiving, and cloud retention policies.
+
+- **[Bareos](https://github.com/bareos/bareos)** [![GitHub stars](https://img.shields.io/github/stars/bareos/bareos?style=social&color=white)](https://github.com/bareos/bareos/stargazers)  
+  🏢 Enterprise-grade open-source network backup engine (Director, Storage Daemon, File Daemon). The premier self-hosted equivalent to commercial media agent / proxy topologies; supports tape, disk, and S3-compatible cloud storage.
+
+- **[UrBackup](https://github.com/uroni/urbackup_backend)** [![GitHub stars](https://img.shields.io/github/stars/uroni/urbackup_backend)](https://github.com/uroni/urbackup_backend/stargazers)  
+  🖥️ Open-source client/server backup system for Windows and Linux. Offers fast image and file backups with web administration, client agent autodiscovery, and offsite storage replication.
+
+- **[Amanda](https://github.com/zmanda/amanda)** [![GitHub stars](https://img.shields.io/github/stars/zmanda/amanda?style=social&color=white)](https://github.com/zmanda/amanda/stargazers)  
+  🕰️ Advanced Maryland Automatic Network Disk Archiver. Battle-tested client-server backup framework capable of coordinating hundreds of endpoint agents to centralized storage pools and cloud tiers.
+
+- **[Proxmox Backup Server](https://github.com/proxmox/proxmox-backup)** [![GitHub stars](https://img.shields.io/github/stars/proxmox/proxmox-backup?style=social&color=white)](https://github.com/proxmox/proxmox-backup/stargazers)  
+  🛡️ Enterprise backup solution architected in Rust, tailored for Proxmox VE VMs, containers, and physical hosts. Features deduplication, authenticated zstd compression, client encryption, and remote synchronization.
+
+- **[Bacula Community](https://github.com/bacula-web/bacula-web)** [![GitHub stars](https://img.shields.io/github/stars/bacula-web/bacula-web?style=social&color=white)](https://github.com/bacula-web/bacula-web/stargazers)  
+  🌐 Classic distributed enterprise backup suite (Director, Storage Daemon, File Daemon). Provides industrial scheduling, granular catalogs, and multi-node protection for hybrid infrastructure *(GitHub star badge tracks the Bacula-Web management portal; core engine source hosted at [Bacula Community GitLab](https://gitlab.bacula.org/))*.
+
+---
+
+## 🛠️ Hybrid Cloud Architecture Cheat Sheet
+
+```
++-------------------------------------------------------------+
+|                     On-Premises Workload                    |
+|   [VMware / Hyper-V / Proxmox / Bare-Metal / K8s Nodes]    |
++-------------------------------------------------------------+
+                              │
+                              ▼
+        +---------------------------------------------+
+        |     Local Agent / Proxy / MediaAgent        |
+        |  - In-flight Compression & Deduplication    |
+        |  - AES-256 Client-Side Encryption          |
+        |  - WAN Throttling & Network Optimization    |
+        +---------------------------------------------+
+                              │
+          ┌───────────────────┴───────────────────┐
+          ▼                                       ▼
++---------------------+               +-----------------------+
+| Local Fast Recovery |               | Multi-Cloud Object    |
+| (NAS / SAN / PBBA)  |               | (S3 / Azure / Wasabi) |
++---------------------+               +-----------------------+
+```
+
+---
+
+## 🤝 How to Contribute
+1. 🍴 Fork the repository.
+2. 📝 Add or update entries in `README.md` (keep descriptions factual, concise, and include official links).
+3. 🧪 Verify that all links, badges, and pricing metrics are active and accurate.
+4. 🚀 Submit a Pull Request with a clear explanation of your additions.
+
+---
+
+## 💖 Support & Community
+
+If you find this curated directory helpful for your infrastructure planning or hybrid data protection architecture:
+- ⭐ **Star this repository** to show your support and make it easier for others to discover!
+- 🍴 **Fork it** to maintain your own internal bookmarks or submit improvements.
+- 📣 **Share it** with fellow DevOps engineers, sysadmins, and cloud architects.
+- ☕ **Sponsor the Maintainer:** If this saved you hours of procurement research or architecture design, consider supporting the work via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007)!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Hybrid-Cloud-Backup-Proxy-Agent&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Hybrid-Cloud-Backup-Proxy-Agent&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer
+- This repository is a **community-curated reference** and is not affiliated with, endorsed by, or sponsored by any of the included commercial vendors or foundations.
+- Backup, disaster recovery, and data protection form critical infrastructure layers. Always test and validate recovery objectives (RTO/RPO), audit immutable storage locks, and verify disaster recovery drills before relying on any solution in production.
+
+---
+<p align="center">
+  <b>Built with ❤️ for backup administrators, infrastructure architects, and open-source practitioners.</b>
+</p>
